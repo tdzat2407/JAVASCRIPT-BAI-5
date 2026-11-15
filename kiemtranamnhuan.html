@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+    <h2>Kiểm tra năm nhuận</h2>
+
+    <script>
+        let nam = Number(prompt("Nhập năm cần kiểm tra:"));
+
+        let namnhuan = false;
+
+        if (nam % 400 == 0 ||
+           (nam % 4 == 0 && nam % 100 != 0)) {
+
+            namnhuan = true;
+        }
+
+        if (namnhuan == true) {
+            document.write(nam + " là năm nhuận");
+        } else {
+            document.write(nam + " không phải năm nhuận");
+        }
+    </script>
+</body>
+</html>
